@@ -3,7 +3,9 @@
     <Navbar />
   </div>
   <div class="main-container">
-    <section class="landing"></section>
+    <section class="landing">
+      <Intro />
+    </section>
     <section class="projects"></section>
     <section class="contact"></section>
   </div>
@@ -11,13 +13,26 @@
 
 <script>
 import Navbar from "../components/Navbar.vue";
+import Intro from "../components/Intro.vue";
 export default {
   setup() {},
   components: {
     Navbar,
+    Intro,
   },
 };
 </script>
 
-<style>
+<style lang="scss">
+.main-container {
+  scroll-snap-type: y mandatory;
+  section {
+    height: 100vh;
+    scroll-snap-align: start;
+  }
+}
+
+.landing {
+  background-color: $background-blue;
+}
 </style>

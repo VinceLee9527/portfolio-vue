@@ -49,9 +49,9 @@
         .router-link-exact-active {
           color: $white;
           font-size: 1rem;
-          font-weight: 700;
+          font-weight: 500;
           position: relative;
-          padding: 4px 1px;
+          padding: 6px 2px;
           &:hover {
             color: $background-blue;
             transition: all ease 0.5s;
@@ -61,7 +61,7 @@
             content: "";
             z-index: -1;
             width: 100%;
-            height: 20%;
+            height: 15%;
             background-color: $main-orange;
             left: 0;
             bottom: 0;
