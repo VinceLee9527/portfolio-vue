@@ -36,6 +36,7 @@
   .nav-container {
     width: 80%;
     padding: 10px;
+    position: relative;
     .navbar-toggle {
       visibility: hidden;
       position: absolute;
@@ -59,11 +60,11 @@
       transform: scale(1, 0);
       li {
         z-index: 2;
-        &:hover .router-link-exact-active::after {
+        &:hover .nav-link::after {
           height: 100%;
           transition: 0.5s;
         }
-        .router-link-exact-active {
+        .nav-link {
           color: $white;
           font-size: 1rem;
           font-weight: 500;
@@ -83,6 +84,7 @@
             left: 0;
             bottom: 0;
             transition: all ease 0.3s;
+            border-radius: 2px;
           }
         }
       }
@@ -90,8 +92,8 @@
     .nav-toggle-label {
       cursor: pointer;
       position: absolute;
-      top: 23px;
-      right: 30px;
+      top: -23px;
+      right: 10px;
       img {
         width: 25px;
         height: 25px;
@@ -129,16 +131,16 @@
       <input type="checkbox" class="navbar-toggle" id="navbar-toggle" />
       <ul class="nav-ul">
         <li>
-          <router-link to="/">about </router-link>
+          <router-link to="/" class="nav-link">about </router-link>
         </li>
         <li>
-          <router-link to="/">blog </router-link>
+          <router-link to="/" class="nav-link">blog </router-link>
         </li>
         <li>
-          <router-link to="/">projects </router-link>
+          <a href="#projects" class="nav-link">projects </a>
         </li>
         <li>
-          <router-link to="/">contact </router-link>
+          <router-link to="/" class="nav-link"> contact </router-link>
         </li>
       </ul>
       <label for="navbar-toggle" class="nav-toggle-label">

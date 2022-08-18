@@ -29,8 +29,14 @@
       width: 130px;
       .social-icons {
         width: 30px;
+        transition: filter 0.3s linear 0s;
         filter: invert(81%) sepia(48%) saturate(4453%) hue-rotate(351deg)
           brightness(100%) contrast(98%);
+
+        &:hover {
+          filter: invert(100%) sepia(1%) saturate(75%) hue-rotate(256deg)
+            brightness(117%) contrast(100%);
+        }
       }
     }
     .intro {
@@ -53,6 +59,9 @@
 </style>
 
 <template>
+  <div>
+    <Navbar />
+  </div>
   <div class="intro-container">
     <div class="intro-text">
       <div class="headline">
@@ -84,7 +93,12 @@
 </template>
 
 <script>
+import Navbar from "../components/Navbar.vue";
+
 export default {
   setup() {},
+  components: {
+    Navbar,
+  },
 };
 </script>

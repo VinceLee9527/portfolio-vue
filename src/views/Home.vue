@@ -1,32 +1,33 @@
 <template>
-  <div class="">
-    <Navbar />
-  </div>
   <div class="main-container">
-    <section class="landing">
+    <section class="main-section landing">
       <Intro />
     </section>
-    <section class="projects"></section>
-    <section class="contact"></section>
+    <section class="main-section projects" id="projects">
+      <Projects />
+    </section>
+    <section class="main-section contact"></section>
   </div>
 </template>
 
 <script>
-import Navbar from "../components/Navbar.vue";
 import Intro from "../components/Intro.vue";
+import Projects from "../components/Projects.vue";
 export default {
   setup() {},
   components: {
-    Navbar,
     Intro,
+    Projects,
   },
 };
 </script>
 
-<style lang="scss">
+ <style lang="scss">
 .main-container {
   scroll-snap-type: y mandatory;
-  section {
+  overflow-y: scroll;
+  height: 100vh;
+  .main-section {
     height: 100vh;
     scroll-snap-align: start;
   }
