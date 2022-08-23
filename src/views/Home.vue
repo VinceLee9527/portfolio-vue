@@ -24,12 +24,12 @@ export default {
 
  <style lang="scss">
 .main-container {
-  scroll-snap-type: y mandatory;
-  overflow-y: scroll;
+  // scroll-snap-type: y mandatory;
+  // overflow-y: scroll;
   height: 100vh;
-  .main-section {
+  .landing {
     height: 100vh;
-    scroll-snap-align: start;
+    // scroll-snap-align: start;
   }
 }
 
