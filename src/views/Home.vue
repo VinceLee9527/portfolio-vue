@@ -6,18 +6,23 @@
     <section class="main-section projects" id="projects">
       <Projects />
     </section>
-    <section class="main-section contact"></section>
+    <section class="main-section contact">
+      <Contacts />
+    </section>
   </div>
 </template>
 
 <script>
 import Intro from "../components/Intro.vue";
 import Projects from "../components/Projects.vue";
+import Contacts from "../components/Contacts.vue";
+
 export default {
   setup() {},
   components: {
     Intro,
     Projects,
+    Contacts,
   },
 };
 </script>
@@ -27,13 +32,13 @@ export default {
   // scroll-snap-type: y mandatory;
   // overflow-y: scroll;
   height: 100vh;
+  // section {
+  //   // height: 100vh;
+  //   // scroll-snap-align: start;
+  // }
   .landing {
     height: 100vh;
-    // scroll-snap-align: start;
+    background-color: $background-blue;
   }
-}
-
-.landing {
-  background-color: $background-blue;
 }
 </style>

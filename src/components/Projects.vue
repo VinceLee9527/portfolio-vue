@@ -5,7 +5,6 @@
   align-items: center;
   .projects-container {
     padding: 20px 20px;
-
     .header {
       margin-top: 50px;
       .title {
