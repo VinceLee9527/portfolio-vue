@@ -16,6 +16,7 @@
       left: 0;
     }
     .name {
+      color: $white;
       font-size: 0.9rem;
       &:hover {
         color: $main-orange;
@@ -125,7 +126,7 @@
 <template>
   <div class="header-container">
     <div class="name-container">
-      <h4 class="name">Vincent Lee / 李崴霖</h4>
+      <a href="#landing" class="name">Vincent Lee / 李崴霖</a>
     </div>
     <div class="nav-container">
       <input type="checkbox" class="navbar-toggle" id="navbar-toggle" />
@@ -140,7 +141,7 @@
           <a href="#projects" class="nav-link">projects </a>
         </li>
         <li>
-          <router-link to="/" class="nav-link"> contact </router-link>
+          <a href="#contact" class="nav-link"> contact </a>
         </li>
       </ul>
       <label for="navbar-toggle" class="nav-toggle-label">

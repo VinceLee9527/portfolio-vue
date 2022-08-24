@@ -1,12 +1,12 @@
 <template>
   <div class="main-container">
-    <section class="main-section landing">
+    <section class="main-section landing" id="landing">
       <Intro />
     </section>
     <section class="main-section projects" id="projects">
       <Projects />
     </section>
-    <section class="main-section contact">
+    <section class="main-section contact" id="contact">
       <Contacts />
     </section>
   </div>

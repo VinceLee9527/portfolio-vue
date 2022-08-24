@@ -76,6 +76,9 @@
     }
   }
 }
+.footer {
+  margin-top: 200px;
+}
 
 @media (min-width: $breakpoint-desktop) {
   .contacts {
@@ -138,11 +141,17 @@
       </div>
     </div>
   </div>
+  <div class="footer">
+    <Footer />
+  </div>
 </template>
 
 <script>
+import Footer from "../components/Footer.vue";
 export default {
   setup() {},
-  components: {},
+  components: {
+    Footer,
+  },
 };
 </script>
