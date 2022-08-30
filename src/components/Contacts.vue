@@ -41,8 +41,14 @@
           justify-content: center;
           width: 100px;
           height: 100px;
+          cursor: pointer;
+          &:hover img {
+            filter: invert(100%) sepia(1%) saturate(75%) hue-rotate(256deg)
+              brightness(117%) contrast(100%);
+          }
           img {
             width: 50px;
+            transition: all 0.1s ease;
             filter: invert(81%) sepia(48%) saturate(4453%) hue-rotate(351deg)
               brightness(100%) contrast(98%);
           }
@@ -102,7 +108,9 @@
       <div class="contacts-text">
         <div class="contacts-card">
           <div class="contacts-icon">
-            <img src="../assets/images/mail.svg" alt="" />
+            <a href="mailto:vlee9527@gmail.com">
+              <img src="../assets/images/mail.svg" alt="" />
+            </a>
           </div>
           <div class="contacts-info">
             <span class="title">Email</span>
@@ -112,7 +120,12 @@
 
         <div class="contacts-card">
           <div class="contacts-icon">
-            <img src="../assets/images/mobile.svg" alt="" />
+            <a
+              href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+              target="_blank"
+            >
+              <img src="../assets/images/mobile.svg" alt="" />
+            </a>
           </div>
           <div class="contacts-info">
             <span class="title">Phone</span>
@@ -122,7 +135,12 @@
 
         <div class="contacts-card">
           <div class="contacts-icon">
-            <img src="../assets/images/linkedin.svg" alt="" />
+            <a
+              href="https://www.linkedin.com/in/vincent-lee-b5029a137/"
+              target="_blank"
+            >
+              <img src="../assets/images/linkedin.svg" alt="" />
+            </a>
           </div>
           <div class="contacts-info">
             <span class="title">Linkedin</span>
@@ -131,7 +149,9 @@
         </div>
         <div class="contacts-card">
           <div class="contacts-icon">
-            <img src="../assets/images/github.svg" alt="" />
+            <a href="https://github.com/VinceLee9527" target="_blank">
+              <img src="../assets/images/github.svg" alt="" />
+            </a>
           </div>
           <div class="contacts-info">
             <span class="title">Github</span>

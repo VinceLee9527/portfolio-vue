@@ -29,7 +29,7 @@
       width: 130px;
       .social-icons {
         width: 30px;
-        transition: filter 0.3s linear 0s;
+        transition: filter 0.1s linear 0s;
         filter: invert(81%) sepia(48%) saturate(4453%) hue-rotate(351deg)
           brightness(100%) contrast(98%);
 
@@ -72,13 +72,19 @@
         <div class="headline-text focus">Frontend Engineer</div>
       </div>
       <div class="socials">
-        <a class="social-icons" href=""
+        <a
+          class="social-icons"
+          href="https://github.com/VinceLee9527"
+          target="_blank"
           ><img src="../assets/images/github.svg" alt=""
         /></a>
-        <a class="social-icons" href=""
+        <a
+          class="social-icons"
+          href="https://www.linkedin.com/in/vincent-lee-b5029a137/"
+          target="_blank"
           ><img src="../assets/images/linkedin.svg" alt=""
         /></a>
-        <a class="social-icons" href=""
+        <a class="social-icons" href="mailto:vlee9527@gmail.com"
           ><img src="../assets/images/mail.svg" alt=""
         /></a>
       </div>

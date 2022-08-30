@@ -15,12 +15,16 @@
     margin-left: auto;
     .name-container {
       margin: 20px 30px;
+      &:hover .name-link {
+        color: $main-orange !important;
+      }
       .name {
         font-size: 1.4rem;
         font-weight: 700;
         margin-bottom: 2px;
-        a {
+        .name-link {
           color: $white;
+          transition: all 0.3s ease-in-out;
         }
       }
     }
@@ -64,7 +68,7 @@
         margin-top: 10px;
         img {
           width: 35px;
-          transition: filter 0.3s linear 0s;
+          transition: filter 0.1s linear 0s;
           filter: invert(100%) sepia(1%) saturate(75%) hue-rotate(256deg)
             brightness(117%) contrast(100%);
 
@@ -85,15 +89,15 @@
     <div class="footer-content">
       <div class="name-container">
         <div class="name">
-          <a href="#landing">Vincent Lee</a>
+          <a href="#landing" class="name-link">Vincent Lee</a>
         </div>
-        <div class="name"><a href="#landing">李崴霖</a></div>
+        <div class="name"><a class="name-link" href="#landing">李崴霖</a></div>
       </div>
       <div class="nav-container">
         <div class="nav-header">Links</div>
         <ul class="nav-ul">
           <li>
-            <router-link to="/" class="nav-link">about </router-link>
+            <router-link to="/about" class="nav-link">about </router-link>
           </li>
           <li>
             <router-link to="/" class="nav-link">blog </router-link>
@@ -109,13 +113,16 @@
       <div class="contacts-container">
         <span>Contact me</span>
         <div class="contact-icons">
-          <a href="">
+          <a href="https://github.com/VinceLee9527" target="_blank">
             <img src="../assets/images/github.svg" alt="" />
           </a>
-          <a href="">
+          <a
+            href="https://www.linkedin.com/in/vincent-lee-b5029a137/"
+            target="_blank"
+          >
             <img src="../assets/images/linkedin.svg" alt="" />
           </a>
-          <a href="">
+          <a href="mailto:vlee9527@gmail.com">
             <img src="../assets/images/mail.svg" alt="" />
           </a>
         </div>

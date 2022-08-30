@@ -132,7 +132,7 @@
       <input type="checkbox" class="navbar-toggle" id="navbar-toggle" />
       <ul class="nav-ul">
         <li>
-          <router-link to="/" class="nav-link">about </router-link>
+          <router-link to="/about" class="nav-link">about </router-link>
         </li>
         <li>
           <router-link to="/" class="nav-link">blog </router-link>
