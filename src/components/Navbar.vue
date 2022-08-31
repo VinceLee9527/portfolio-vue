@@ -2,9 +2,9 @@
 .header-container {
   display: flex;
   flex-direction: column;
+  height: 50px;
   width: 100%;
   align-items: center;
-  padding: 15px;
   background-color: $background-blue;
   color: $white;
   .name-container {
@@ -18,6 +18,7 @@
     .name {
       color: $white;
       font-size: 0.9rem;
+      font-weight: 700;
       &:hover {
         color: $main-orange;
         transition: 0.7s;
@@ -35,8 +36,7 @@
     }
   }
   .nav-container {
-    width: 80%;
-    padding: 10px;
+    width: 100%;
     position: relative;
     .navbar-toggle {
       visibility: hidden;
@@ -51,7 +51,8 @@
       position: absolute;
       left: 0;
       width: 100%;
-      height: 180px;
+      height: 200px;
+      background-color: $background-blue;
       display: flex !important;
       flex-direction: column;
       justify-content: space-around;
@@ -107,7 +108,11 @@
 
 @media (min-width: $breakpoint-tablet) {
   .header-container {
+    height: 100px;
+    padding: 15px;
     .nav-container {
+      width: 80%;
+      padding: 10px;
       .nav-ul {
         flex-direction: row;
         transform: scale(1, 1);
@@ -126,7 +131,9 @@
 <template>
   <div class="header-container">
     <div class="name-container">
-      <a href="#landing" class="name">Vincent Lee / 李崴霖</a>
+      <router-link to="/#landing" class="name"
+        >Vincent Lee / 李崴霖</router-link
+      >
     </div>
     <div class="nav-container">
       <input type="checkbox" class="navbar-toggle" id="navbar-toggle" />
@@ -138,10 +145,10 @@
           <router-link to="/" class="nav-link">blog </router-link>
         </li>
         <li>
-          <a href="#projects" class="nav-link">projects </a>
+          <router-link to="/#projects" class="nav-link">projects </router-link>
         </li>
         <li>
-          <a href="#contact" class="nav-link"> contact </a>
+          <router-link to="/#contact" class="nav-link"> contact </router-link>
         </li>
       </ul>
       <label for="navbar-toggle" class="nav-toggle-label">

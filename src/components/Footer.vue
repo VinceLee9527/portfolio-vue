@@ -89,7 +89,9 @@
     <div class="footer-content">
       <div class="name-container">
         <div class="name">
-          <a href="#landing" class="name-link">Vincent Lee</a>
+          <router-link to="/#landing" class="name-link"
+            >Vincent Lee</router-link
+          >
         </div>
         <div class="name"><a class="name-link" href="#landing">李崴霖</a></div>
       </div>
@@ -103,10 +105,12 @@
             <router-link to="/" class="nav-link">blog </router-link>
           </li>
           <li>
-            <a href="#projects" class="nav-link">projects </a>
+            <router-link to="/#projects" class="nav-link"
+              >projects
+            </router-link>
           </li>
           <li>
-            <a href="#contact" class="nav-link"> contact </a>
+            <router-link to="/#contact" class="nav-link"> contact </router-link>
           </li>
         </ul>
       </div>

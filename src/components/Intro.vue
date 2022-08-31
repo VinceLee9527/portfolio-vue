@@ -52,8 +52,11 @@
 }
 
 @media (min-width: $breakpoint-tablet) {
-  .headline-text {
-    font-size: 4rem !important;
+  .intro-container {
+    padding-top: 300px;
+    .headline-text {
+      font-size: 4rem !important;
+    }
   }
 }
 </style>
