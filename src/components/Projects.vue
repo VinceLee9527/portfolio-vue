@@ -193,9 +193,9 @@
         <div class="project-card">
           <div class="snap-container">
             <div class="project-snap">
-              <a href="">
+              <router-link to="/projects/soulmate">
                 <img src="../assets/images/soulmate.png" alt="" />
-              </a>
+              </router-link>
             </div>
           </div>
           <div class="project-content-container">
@@ -214,7 +214,10 @@
                 platform to find their dream band mate.
               </p>
             </div>
-            <router-link to="/" tag="button" class="project-button"
+            <router-link
+              to="/projects/soulmate"
+              tag="button"
+              class="project-button"
               >View Project</router-link
             >
           </div>
