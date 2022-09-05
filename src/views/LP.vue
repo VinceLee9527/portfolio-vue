@@ -66,16 +66,16 @@
   </div>
   <div class="project-container">
     <div class="title-section">
-      <div class="title">Soul Mate</div>
+      <div class="title">Listening Party</div>
       <div class="intro">
-        A Tinder-like app that gives musicians looking to start a band a
-        platform to find their dream band mate.
+        An enhanced todo list that allows users to store and manage
+        yet-to-listen albums.
       </div>
       <div class="project-stack">
-        <span>React</span>
-        <span>MongoDB</span>
-        <span>Node.js</span>
-        <span>Sass</span>
+        <span>Vue 3</span>
+        <span>Vuex</span>
+        <span>Firebase</span>
+        <span>Tailwind CSS</span>
         <span>Netlify</span>
       </div>
       <div class="live-site">

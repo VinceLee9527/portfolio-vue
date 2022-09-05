@@ -193,7 +193,7 @@
         <div class="project-card">
           <div class="snap-container">
             <div class="project-snap">
-              <router-link to="/projects/soulmate">
+              <router-link to="/projects/soulmate#top">
                 <img src="../assets/images/soulmate.png" alt="" />
               </router-link>
             </div>
@@ -215,7 +215,7 @@
               </p>
             </div>
             <router-link
-              to="/projects/soulmate"
+              to="/projects/soulmate#top"
               tag="button"
               class="project-button"
               >View Project</router-link
@@ -226,9 +226,9 @@
         <div class="project-card">
           <div class="snap-container">
             <div class="project-snap">
-              <a href="">
+              <router-link to="/projects/listeningParty#top">
                 <img src="../assets/images/lp.png" alt="" />
-              </a>
+              </router-link>
             </div>
           </div>
           <div class="project-content-container">
@@ -247,7 +247,10 @@
                 yet-to-listen albums.
               </p>
             </div>
-            <router-link to="/" tag="button" class="project-button"
+            <router-link
+              to="/projects/listeningParty#top"
+              tag="button"
+              class="project-button"
               >View Project</router-link
             >
           </div>
@@ -255,9 +258,9 @@
         <div class="project-card">
           <div class="snap-container">
             <div class="project-snap">
-              <a href="">
+              <router-link to="/projects/ACTwitter#top">
                 <img src="../assets/images/act.png" alt="" />
-              </a>
+              </router-link>
             </div>
           </div>
           <div class="project-content-container">
@@ -275,7 +278,10 @@
                 followers, tweets, profiles, and admin.
               </p>
             </div>
-            <router-link to="/" tag="button" class="project-button"
+            <router-link
+              to="/projects/ACTwitter#top"
+              tag="button"
+              class="project-button"
               >View Project</router-link
             >
           </div>

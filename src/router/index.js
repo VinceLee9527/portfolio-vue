@@ -2,6 +2,8 @@ import { createRouter, createWebHistory } from "vue-router";
 import Home from "../views/Home.vue";
 import About from "../views/About.vue";
 import SoulMate from "../views/SoulMate.vue";
+import LP from "../views/LP.vue";
+import ACT from "../views/Tweet.vue";
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -27,6 +29,16 @@ const router = createRouter({
       path: "/projects/soulmate",
       name: "soulmate",
       component: SoulMate,
+    },
+    {
+      path: "/projects/listeningParty",
+      name: "lp",
+      component: LP,
+    },
+    {
+      path: "/projects/ACTwitter",
+      name: "act",
+      component: ACT,
     },
   ],
 });
