@@ -89,50 +89,53 @@
       <div class="bodytext purpose">
         <h4>Purpose and Inspirations</h4>
         <p>
-          The inspiration for this project came from an issue that I faced. As a
-          guitar player, I’d love to start a band or find other instrument
-          players to jam with. However, there are just not many ways to connect
-          with other musicians. I designed this app with the intention of
-          creating a platform for musicians to connect with one another.<br /><br />
-          This app is based on the functionality of Tinder. It consists of a
-          login/signup page, an edit profile page, and finally the swiper and
-          chat section. For detailed demo of each components please view the
-          video demo above.
+          The inspiration for this project came from a minor inconvenience that
+          I encountered. I’m a massive fan of music. I started an album review
+          blog in college and it’s still ongoing. Recently I started finding it
+          more challenging to keep track of all the albums to review and listen
+          to. So I created a simple to-do list to keep track of my albums with
+          listening status.
+          <br /><br />
+
+          I wanted to take this opportunity to learn some new tools. So I
+          decided to build this full-stack project with frameworks and tools
+          that I have not used before. This project was built using Vue 3
+          Composition API, Tailwind CSS, and Firebase for the database.
         </p>
       </div>
       <div class="bodytext problem">
         <h4>Problems Encountered</h4>
         <p>
           I encountered quite a few problems during the creation of this
-          project. This is the first time that I’m using React and MongoDB to
-          build a full-stack app.<br /><br />
+          project. This is the first time that I’m using Vue 3 and Firebase to
+          build a full-stack app.
+          <br /><br />
 
           For the backend component, everything is pretty new to me so the
-          issues I had were all due to me learning them for the first time. This
-          includes learning how to set up and use JWT token for authorization
-          and bcrypt for password encryption, learning what CORS is and how to
-          resolve CORS errors, and finally learning and using MongoDB CRUD
-          operations. There were many hiccups along the way but they were able
-          to be resolved with Stack overflow and documentation. The biggest
-          blocker I had for the backend component was JWT token. I didn’t fully
-          understand the concept of JWT and how it operates, so I was including
-          the entire user data in the token, which includes a super big b64 for
-          the profile image. This caused a major issue as the token was way too
-          big to include in the response. I resolved this issue by only
-          including User ID in the token, as it was unnecessary to include all
-          of the user information just for authorization purposes.<br /><br />
-
-          For the frontend component, even though it was my first time writing
-          with React, my previous experience with VUE helped flattened the
-          learning curve. The issue I encountered for the frontend component is
-          far less than that of the backend. The biggest issue I ran into was
-          handling picture uploads. I decided to convert the image to b64 via
-          Filereader. However, an issue that I encountered was that there is a
-          pretty significant size restriction for this, a file too big would
-          cause an error. I resolved this by setting a verification for image
-          size at the front end, which solved the problem but it’s still not
-          ideal. I’m currently still researching ways I can optimize this, like
-          using the base64IO library.
+          issues I had were all due to me learning them for the first time. When
+          I started this project, version 9 of Firebase had just been released.
+          The change from v8 to v9 is very significant. The setup, as well as
+          the code style, have all been changed. This means that a lot of
+          resources and tutorials are not applicable since they were mostly for
+          v8. I had to rely solely on Firebase’s documentation to learn how to
+          operate Firebase. The biggest issue I encountered was image upload. My
+          initial method was to convert the image to b64 and store it in the
+          Firebase database. This didn’t work as the b64 was too big to store.
+          To resolve this, I learned to utilize Firestore. My eventual solution
+          is to upload the image to Firestore, then use the getDownloadURL()
+          function from the Firestore library to produce an image link, which is
+          then uploaded with the rest of the album info.
+          <br /><br />
+          For the frontend component, I had previously completed a project using
+          Vue 2. However, Vue 3 has some pretty significant differences from Vue
+          2 with the new composition API. The most challenging part is
+          understanding the new setup() function as well as ref. I spent a lot
+          of time understanding core knowledge of Vue 3 such as how setup() is
+          replacing certain Vue 2 lifecycle methods like Created() and Before
+          create, as well as the difference between ref and reactive, the new
+          Watch method, etc. It was a pleasant experience as I spent so much
+          time reading the documentation, it really felt like I have a good
+          grasp and solid understanding of composition API.
         </p>
       </div>
     </div>
