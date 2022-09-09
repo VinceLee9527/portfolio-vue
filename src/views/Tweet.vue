@@ -66,17 +66,16 @@
   </div>
   <div class="project-container">
     <div class="title-section">
-      <div class="title">Soul Mate</div>
+      <div class="title">AC Twitter</div>
       <div class="intro">
-        A Tinder-like app that gives musicians looking to start a band a
-        platform to find their dream band mate.
+        A Twitter clone with full Twitter functionality such as followers,
+        tweets, profiles, and admin.
       </div>
       <div class="project-stack">
-        <span>React</span>
-        <span>MongoDB</span>
-        <span>Node.js</span>
+        <span>Vue 2</span>
+        <span>Vuex</span>
         <span>Sass</span>
-        <span>Netlify</span>
+        <span>Socket.IO</span>
       </div>
       <div class="live-site">
         <a href="">Live site</a>
@@ -89,50 +88,51 @@
       <div class="bodytext purpose">
         <h4>Purpose and Inspirations</h4>
         <p>
-          The inspiration for this project came from an issue that I faced. As a
-          guitar player, I’d love to start a band or find other instrument
-          players to jam with. However, there are just not many ways to connect
-          with other musicians. I designed this app with the intention of
-          creating a platform for musicians to connect with one another.<br /><br />
-          This app is based on the functionality of Tinder. It consists of a
-          login/signup page, an edit profile page, and finally the swiper and
-          chat section. For detailed demo of each components please view the
-          video demo above.
+          This app is the final project of the coding program Alpha Camp. This
+          app is a group project, featuring 2 frontend and 2 backend engineers.
+          This is a fullstack Twitter clone that has all the functions that real
+          Twitter has. The frontend component was built with Vue 2 and Vuex. The
+          features include Login/Signup page, main feed with tweets, followers
+          section, user’s profile page with tweets and like history, and finally
+          an admin page to manage users and tweets.
         </p>
       </div>
       <div class="bodytext problem">
         <h4>Problems Encountered</h4>
         <p>
           I encountered quite a few problems during the creation of this
-          project. This is the first time that I’m using React and MongoDB to
-          build a full-stack app.<br /><br />
-
-          For the backend component, everything is pretty new to me so the
-          issues I had were all due to me learning them for the first time. This
-          includes learning how to set up and use JWT token for authorization
-          and bcrypt for password encryption, learning what CORS is and how to
-          resolve CORS errors, and finally learning and using MongoDB CRUD
-          operations. There were many hiccups along the way but they were able
-          to be resolved with Stack overflow and documentation. The biggest
-          blocker I had for the backend component was JWT token. I didn’t fully
-          understand the concept of JWT and how it operates, so I was including
-          the entire user data in the token, which includes a super big b64 for
-          the profile image. This caused a major issue as the token was way too
-          big to include in the response. I resolved this issue by only
-          including User ID in the token, as it was unnecessary to include all
-          of the user information just for authorization purposes.<br /><br />
-
-          For the frontend component, even though it was my first time writing
-          with React, my previous experience with VUE helped flattened the
-          learning curve. The issue I encountered for the frontend component is
-          far less than that of the backend. The biggest issue I ran into was
-          handling picture uploads. I decided to convert the image to b64 via
-          Filereader. However, an issue that I encountered was that there is a
-          pretty significant size restriction for this, a file too big would
-          cause an error. I resolved this by setting a verification for image
-          size at the front end, which solved the problem but it’s still not
-          ideal. I’m currently still researching ways I can optimize this, like
-          using the base64IO library.
+          project. This is the first collaboration project with other engineers,
+          as well as the first full-stack app.
+          <br /><br />
+          The biggest challenge that we faced during this project is project
+          management. This is the first time any of us has worked with other
+          engineers to complete a project. Besides Figma design and backend
+          testing files, we had to create everything else on our own. This
+          includes all the coding components, as well as the project management
+          component. Creating a realistic timeline for all of our different
+          functions, and communicating with backend engineers on API specs, were
+          all a lot more difficult than I had imagined. Working with another
+          frontend engineer was a challenge too. We spent a lot of time figuring
+          out what we need to communicate with each other. This includes class
+          naming convention, what stacks and tools to use, Sass structure,
+          components structure, who to work on what, etc. All in all, it was a
+          painful but very rewarding process that better prepares me for the
+          real work environment.
+          <br /><br />
+          For technical challenges, the first issue I encountered was routing.
+          Since we are doing a user’s page as well as an admin portal, we needed
+          to make sure the user cannot access the admin portal. My solution is
+          to use a combination of Vuex and localStorage to identify admins and
+          users and use it to prevent user access to the admin portal. Another
+          challenge is the “Remove profile picture” function. Uploading pictures
+          and switching pictures are easy-to-do functions that were completed
+          without issues, but I struggled to complete the remove photo function.
+          The biggest blocker is figuring out how to upload the no-image state
+          to the server. The solution to this is to send an identifier to the
+          server when the picture is removed, then the user’s profile image will
+          be removed server-side. The solution is very simple but did not occur
+          to me as I had limited backend knowledge then. It was an important
+          lesson to communicate with others to reach a faster resolution.
         </p>
       </div>
     </div>
