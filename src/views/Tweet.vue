@@ -78,7 +78,11 @@
         <span>Socket.IO</span>
       </div>
       <div class="live-site">
-        <a href="">Live site</a>
+        <a
+          href="https://vincelee9527.github.io/twitter-front-end-vue/#/signin"
+          target="_blank"
+          >Live site</a
+        >
       </div>
     </div>
     <div class="project-snap">

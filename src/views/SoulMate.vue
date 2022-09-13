@@ -79,7 +79,9 @@
         <span>Netlify</span>
       </div>
       <div class="live-site">
-        <a href="">Live site</a>
+        <a href="https://timely-cascaron-c06107.netlify.app/" target="_blank"
+          >Live site</a
+        >
       </div>
     </div>
     <div class="project-snap">

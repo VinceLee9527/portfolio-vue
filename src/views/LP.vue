@@ -79,7 +79,9 @@
         <span>Netlify</span>
       </div>
       <div class="live-site">
-        <a href="">Live site</a>
+        <a href="https://sage-bombolone-9d887b.netlify.app/" target="_blank"
+          >Live site</a
+        >
       </div>
     </div>
     <div class="project-snap">
