@@ -42,6 +42,14 @@
       }
     }
   }
+  .video-container {
+    widows: 100%;
+    display: flex;
+    iframe {
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
   .body-section {
     margin-top: 50px;
     .bodytext {
@@ -84,8 +92,16 @@
         >
       </div>
     </div>
-    <div class="project-snap">
-      <img src="../assets/images/soulmate.png" alt="" />
+    <div class="video-container">
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/uLR8AQuyZ1U"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
     </div>
     <div class="body-section">
       <div class="bodytext purpose">

@@ -42,6 +42,14 @@
       }
     }
   }
+  .video-container {
+    widows: 100%;
+    display: flex;
+    iframe {
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
   .body-section {
     margin-top: 50px;
     .bodytext {
@@ -79,14 +87,22 @@
       </div>
       <div class="live-site">
         <a
-          href="https://vincelee9527.github.io/twitter-front-end-vue/#/signin"
+          href="https://chacowang0125.github.io/simple-twitter-challenge/#/signin"
           target="_blank"
           >Live site</a
         >
       </div>
     </div>
-    <div class="project-snap">
-      <img src="../assets/images/soulmate.png" alt="" />
+    <div class="video-container">
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/t2pTG4Hl998"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
     </div>
     <div class="body-section">
       <div class="bodytext purpose">
