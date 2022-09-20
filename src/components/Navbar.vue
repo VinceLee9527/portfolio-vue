@@ -142,7 +142,9 @@
           <router-link to="/about" class="nav-link">about </router-link>
         </li>
         <li>
-          <router-link to="/" class="nav-link">blog </router-link>
+          <a href="https://medium.com/@vlee9527" target="blank" class="nav-link"
+            >blog</a
+          >
         </li>
         <li>
           <router-link to="/#projects" class="nav-link">projects </router-link>

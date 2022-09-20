@@ -56,9 +56,9 @@
   <div>
     <Navbar />
   </div>
-  <div class="content-container">
+  <div class="content-container" id="about-landing">
     <div class="resume-section">
-      <div class="resume">Looing for my resume? &nbsp</div>
+      <div class="resume">Looing for my resume? &nbsp;</div>
       <div><a href="" class="resume click">Click Here</a></div>
     </div>
     <div class="about-section">

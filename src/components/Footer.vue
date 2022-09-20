@@ -99,10 +99,17 @@
         <div class="nav-header">Links</div>
         <ul class="nav-ul">
           <li>
-            <router-link to="/about" class="nav-link">about </router-link>
+            <router-link to="/about/#about-landing" class="nav-link"
+              >about
+            </router-link>
           </li>
           <li>
-            <router-link to="/" class="nav-link">blog </router-link>
+            <a
+              href="https://medium.com/@vlee9527"
+              target="blank"
+              class="nav-link"
+              >blog
+            </a>
           </li>
           <li>
             <router-link to="/#projects" class="nav-link"
