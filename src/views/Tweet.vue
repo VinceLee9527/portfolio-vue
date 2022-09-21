@@ -92,6 +92,13 @@
           >Live site</a
         >
       </div>
+      <div class="live-site">
+        <a
+          href="https://github.com/VinceLee9527/twitter-front-end-vue"
+          target="_blank"
+          >Github</a
+        >
+      </div>
     </div>
     <div class="video-container">
       <iframe

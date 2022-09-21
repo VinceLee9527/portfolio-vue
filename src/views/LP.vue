@@ -91,6 +91,13 @@
           >Live site</a
         >
       </div>
+      <div class="live-site">
+        <a
+          href="https://github.com/VinceLee9527/vue3-firebase-listening_party"
+          target="_blank"
+          >Github</a
+        >
+      </div>
     </div>
     <div class="video-container">
       <iframe

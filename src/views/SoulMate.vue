@@ -92,7 +92,7 @@
         >
       </div>
       <div class="live-site">
-        <a href="https://timely-cascaron-c06107.netlify.app/" target="_blank"
+        <a href="https://github.com/VinceLee9527/soulmate_mern" target="_blank"
           >Github</a
         >
       </div>
