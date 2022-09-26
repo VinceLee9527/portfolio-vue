@@ -59,7 +59,13 @@
   <div class="content-container" id="about-landing">
     <div class="resume-section">
       <div class="resume">Looing for my resume? &nbsp;</div>
-      <div><a href="" class="resume click">Click Here</a></div>
+      <div>
+        <a
+          href="https://drive.google.com/drive/folders/1oq8GaHgzyX151m5ExcPufZdKrT7NIKV2?usp=sharing"
+          class="resume click"
+          >Click Here</a
+        >
+      </div>
     </div>
     <div class="about-section">
       <h4 class="para-header">A little about myself</h4>
