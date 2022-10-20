@@ -81,9 +81,13 @@
       </div>
       <div class="project-stack">
         <span>React</span>
+        <span>Sass</span>
         <span>MongoDB</span>
         <span>Node.js</span>
-        <span>Sass</span>
+        <span>Express</span>
+        <span>JWT</span>
+        <span>Bcrypt</span>
+        <span>Heroku</span>
         <span>Netlify</span>
       </div>
       <div class="live-site">
