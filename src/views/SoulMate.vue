@@ -87,7 +87,8 @@
         <span>Express</span>
         <span>JWT</span>
         <span>Bcrypt</span>
-        <span>Heroku</span>
+        <span>AWS</span>
+        <span>Elastic Beanstalk</span>
         <span>Netlify</span>
       </div>
       <div class="live-site">
@@ -155,7 +156,14 @@
           the profile image. This caused a major issue as the token was way too
           big to include in the response. I resolved this issue by only
           including User ID in the token, as it was unnecessary to include all
-          of the user information just for authorization purposes.<br /><br />
+          of the user information just for authorization purposes. Another
+          backend issue I faced was Heroku removing their free tier. I decided
+          to use AWS as a replacement to deploy my server. I wanted to gain AWS
+          hands-on experience as AWS is a very popular server option. I used
+          Elastic Beanstalk to create an environment for my EC2 Instance. I
+          encountered a lot of problems when setting up AWS. The biggest problem
+          was not passing health-check. I configured my target group path and
+          interval to avoid exceeding MongoDB connection limit.<br /><br />
 
           For the frontend component, even though it was my first time writing
           with React, my previous experience with VUE helped flattened the
@@ -166,8 +174,11 @@
           pretty significant size restriction for this, a file too big would
           cause an error. I resolved this by setting a verification for image
           size at the front end, which solved the problem but it’s still not
-          ideal. I’m currently still researching ways I can optimize this, like
-          using the base64IO library.
+          ideal. To resolve this, I started to look for plugins that could
+          either reduce file size when sent to the server or when upload
+          happens. I found React Image File Resizer, a plugin that can compress
+          image upon upload. This is a great solution so now I don't have to set
+          a verification for image size when user uploads.
         </p>
       </div>
     </div>
