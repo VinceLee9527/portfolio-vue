@@ -112,6 +112,15 @@
       ></iframe>
     </div>
     <div class="body-section">
+      <div class="bodytext instructions">
+        <h4>Instructions</h4>
+        <h3>Test Logins:</h3>
+        <p>
+          User Account：user1<br />
+          Admin Account: root<br />
+          Password：12345678
+        </p>
+      </div>
       <div class="bodytext purpose">
         <h4>Purpose and Inspirations</h4>
         <p>

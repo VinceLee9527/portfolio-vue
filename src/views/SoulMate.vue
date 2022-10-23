@@ -113,6 +113,14 @@
       ></iframe>
     </div>
     <div class="body-section">
+      <div class="bodytext instructions">
+        <h4>Instructions</h4>
+        <h3>Test Logins:</h3>
+        <p>
+          Account: test@gmail.com<br />
+          Password: 123
+        </p>
+      </div>
       <div class="bodytext purpose">
         <h4>Purpose and Inspirations</h4>
         <p>
